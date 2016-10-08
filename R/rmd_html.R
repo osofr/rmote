@@ -38,7 +38,7 @@ serve_rmd_html <- function(dir, file.name, ...) {
         getFromNamespace("print.trellis", "lattice")(text_plot(paste("help:", topic)))
         dev.off()
       }
-      return()
+      invisible(return())
     }
   } else {
     stop("the rmote server has not been started or the file doesn't exist")
